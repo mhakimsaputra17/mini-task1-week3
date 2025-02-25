@@ -1,7 +1,45 @@
+:root {
+  --pink: pink;
+  --green: chartreuse;
+}
+
 nav h1 {
   color: pink;
 }
 
+nav h1:hover {
+  background: linear-gradient(to right, #0099f7, #f11712);
+}
+
 nav h1 a {
   color: pink;
+}
+/* selector elemen */
+article {
+  color: var(--green);
+  font-size: 1.5em;
+}
+/* selector class */
+section .job {
+  color: #f11712;
+  font-weight: bold;
+}
+/* selector id */
+#city {
+  color: black;
+  font-weight: bold;
+}
+
+/* selector majemuk children of*/
+h2 p {
+  color: azure;
+}
+/* selector majemuk greater thans */
+section > p {
+  font-style: italic;
+}
+
+/* selector majemuk direct sibling */
+nav + section {
+  margin: 50px;
 }
